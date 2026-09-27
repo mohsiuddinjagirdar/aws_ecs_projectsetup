@@ -24,6 +24,11 @@ This will create image in local docker. </br>
 • Push the image to remote desktop mohsiuddinjagirdar/nodejs-image:latest</br>
 <img width="1542" height="762" alt="image" src="https://github.com/user-attachments/assets/f509cf8f-8e37-4aa0-ac74-c67b6a933989" />
 
+Incase you wish to run through ECR run following command</br>
+• docker tag mohsiuddinjagirdar/nodejs-image:latest 'Repository URI':1.0.0</br>
+• aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 'Repository URI'</br>
+• docker push 'Repository URI':1.0.0</br>
+
 
 **VPC and Subnet Creation** </br>
 In this project we will create custom VPC rather then working on default VPC.</br>
