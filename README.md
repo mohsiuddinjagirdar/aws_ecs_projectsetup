@@ -1,7 +1,7 @@
 # AWS ECS Project
 >In this project, we are leveraging Amazon ECS, AWS’s fully managed container orchestration service, to deploy a microservices‑based architecture. The setup includes two containers: a Node.js application that exposes RESTful APIs supporting GET, POST, and PATCH methods, and a MongoDB container serving as the backend database.
 
-# Architecure
+# Architecture
 
 In this project we will utilized following AWS services.</br>
 • ****VPC & Subnet** -** Provides a secure, isolated network environment to host containers with fine‑grained control over IP addressing and routing.</br>
