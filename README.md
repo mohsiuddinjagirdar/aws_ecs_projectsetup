@@ -8,11 +8,21 @@ In this project we will utilized following AWS services.</br>
 • **Security Groups -** Acts as a virtual firewall to control inbound and outbound traffic, ensuring only authorized access to application and database containers.</br>
 • **ECS (Elastic Container Service)  -** Orchestrates and manages containerized workloads, enabling seamless deployment and scaling of the Node.js API and MongoDB services.</br>
 • **ALB (Application Load Balancer) -** Distributes incoming traffic across containers, ensuring high availability, fault tolerance, and efficient request handling.</br>
-• **EFS (Elastic File System) ** -** Offers scalable, shared storage for containers, supporting persistent data needs and simplifying stateful application management.</br>
+• **EFS (Elastic File System) ** - Offers scalable, shared storage for containers, supporting persistent data needs and simplifying stateful application management.</br>
 
 
 
 # Implementation Steps
+**Docker Image** </br>
+• DockerFile is available use following command to create image. Note Docker Desktop should be running. </br>
+• docker build -t aws_ecs_project:latest . </br>
+This will create image in local docker. </br>
+• Create public repository in remote desktop</br>
+<img width="1520" height="360" alt="image" src="https://github.com/user-attachments/assets/9d7dd2b6-597e-4f3a-99ff-98f0726fec3c" />
+• Tag image docker tag aws_ecs_project:latest mohsiuddinjagirdar/nodejs-image:latest</br>
+• Push the image to remote desktop mohsiuddinjagirdar/nodejs-image:latest</br>
+<img width="1542" height="762" alt="image" src="https://github.com/user-attachments/assets/f509cf8f-8e37-4aa0-ac74-c67b6a933989" />
+
 
 **VPC and Subnet Creation** </br>
 In this project we will create custom VPC rather then working on default VPC.</br>
